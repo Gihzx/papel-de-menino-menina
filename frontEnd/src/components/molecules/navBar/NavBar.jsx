@@ -9,6 +9,7 @@ export function NavBar() {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
+
     console.log("MUDEI");
   };
   return (
