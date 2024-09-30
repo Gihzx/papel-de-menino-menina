@@ -55,7 +55,7 @@ export const nav_list = styled.div`
   }
   @media (max-width: 375px) {
     ul {
-      /* display esta como */
+      /* display esta como display:none */
       position: absolute;
       list-style: none;
       display: none;
@@ -81,8 +81,8 @@ export const nav_list = styled.div`
     }
   }
   @media (max-width: 824px) {
-    ul {
-      /* position: absolute;
+    /* ul {
+      position: absolute;
       list-style: none;
       display: flex;
       align-items: start;
@@ -100,8 +100,8 @@ export const nav_list = styled.div`
       display: flex;
       margin: 0 0;
       align-items: start;
-      cursor: pointer; */
-    }
+      cursor: pointer;
+    } */
     .arrowDown {
       display: none;
     }
