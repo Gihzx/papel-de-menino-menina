@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const Conatiner = styled.section`
   background-color: #ff9029;
+  justify-content: space-around;
   display: flex;
   align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+
   .item {
     position: relative;
     display: flex;
