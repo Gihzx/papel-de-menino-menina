@@ -22,10 +22,10 @@ export const div = styled.div`
     }
   }
   @media (max-width: 824px) {
-    padding: 10px 24px;
+    /* padding: 10px 24px;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; */
 
     .mobile-menu {
       cursor: pointer;
@@ -55,9 +55,10 @@ export const nav_list = styled.div`
   }
   @media (max-width: 375px) {
     ul {
+      /* display esta como display:none */
       position: absolute;
       list-style: none;
-      display: flex;
+      display: none;
       align-items: start;
       flex-direction: column;
       margin-top: 2.5rem;
@@ -80,7 +81,7 @@ export const nav_list = styled.div`
     }
   }
   @media (max-width: 824px) {
-    ul {
+    /* ul {
       position: absolute;
       list-style: none;
       display: flex;
@@ -100,7 +101,7 @@ export const nav_list = styled.div`
       margin: 0 0;
       align-items: start;
       cursor: pointer;
-    }
+    } */
     .arrowDown {
       display: none;
     }
