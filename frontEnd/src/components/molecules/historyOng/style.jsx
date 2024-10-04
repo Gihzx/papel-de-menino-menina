@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   display: flex;
+  justify-content: center;
+  margin: 3rem;
+  gap: 50px;
+
   h1 {
     color: #ba6414;
     width: 300px;
@@ -12,7 +16,8 @@ export const Container = styled.section`
   }
   .pictureSection {
     border-radius: 10px;
-    height: 65%;
+    height: 690px;
+    object-fit: cover;
   }
   @media (max-width: 375px) {
     display: flex;
@@ -23,6 +28,7 @@ export const Container = styled.section`
     width: 88%;
     .pictureSection {
       width: 97%;
+
       margin-top: 15px;
     }
   }
@@ -33,6 +39,9 @@ export const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 1024) {
+    margin-left: 20px;
+  }
 `;
 
 export const Section = styled.div``;

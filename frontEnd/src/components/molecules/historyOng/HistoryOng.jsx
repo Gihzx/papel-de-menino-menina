@@ -33,13 +33,12 @@ function HistoryOng() {
             Saber mais
           </PrimaryButton>
         </S.Div>
-        <span>
-          <img
-            src={imgHomem}
-            alt="Imagem de um homem"
-            className="pictureSection"
-          />
-        </span>
+
+        <img
+          src={imgHomem}
+          alt="Imagem de um homem"
+          className="pictureSection"
+        />
       </S.Container>
     </>
   );
