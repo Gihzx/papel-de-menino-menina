@@ -27,4 +27,12 @@ export const Conatiner = styled.section`
     display: flex;
     flex-direction: column;
   }
+  @media (max-width: 1440px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .item {
+      width: 100%;
+    }
+  }
 `;

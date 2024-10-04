@@ -1,5 +1,4 @@
 import logoIPM from "../../../assets/logoIPM.png";
-
 import { PrimaryButton } from "../../atomo/button/Primary-button";
 import { IoIosArrowDown } from "react-icons/io";
 import * as S from "./style.jsx";
