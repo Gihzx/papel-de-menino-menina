@@ -5,6 +5,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 8%;
   img {
     height: 180vh;
   }
