@@ -4,6 +4,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   background-color: #7d00a2;
+  padding: 3% 7%;
   gap: 40px;
   .inputs {
     display: flex;

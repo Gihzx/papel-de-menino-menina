@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 3% 7%;
-  h1 {
-    color: #ba6414;
+  .imgCarousel {
+    width: 100%;
+    height: 90vh;
   }
 `;
