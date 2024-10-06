@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 3% 7%;
+  margin-left: 2rem;
+  margin-top: 5rem;
   h1 {
     color: #ba6414;
+  }
+  h2 {
+    color: #ba6414;
+  }
+  .text {
   }
 `;

@@ -5,5 +5,6 @@ export const Container = styled.div`
   padding: 1rem;
   h2 {
     color: aliceblue;
+    margin-left: 2%;
   }
 `;

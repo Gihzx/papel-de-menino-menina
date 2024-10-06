@@ -3,7 +3,10 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  @media (max-width: 375px) {
+    margin: 1.5rem;
+  }
+  padding: 3% 7%;
   gap: 47px;
   h1 {
     color: #ba6414;
@@ -23,6 +26,6 @@ export const Container = styled.section`
     flex-direction: column;
   }
   div {
-    width: 90%;
+    width: 100%;
   }
 `;

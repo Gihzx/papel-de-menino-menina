@@ -6,7 +6,7 @@ export const Line = styled.div`
   padding: 7rem 0 3rem 0;
 
   p {
-    border: solid 1px #3f3e3e;
+    border: solid 0.5px #3f3e3e;
     width: 70%;
   }
 `;

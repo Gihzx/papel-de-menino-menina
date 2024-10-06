@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 4rem;
-  gap: 47px;
+  padding: 2%;
+
   h1 {
     color: #ba6414;
   }
@@ -19,6 +19,12 @@ export const Container = styled.section`
     align-items: center;
   }
   p {
-    width: 80%;
+    width: 90%;
+  }
+  @media (max-width: 375px) {
+    padding: 6%;
+    p {
+      width: 100%;
+    }
   }
 `;
