@@ -9,6 +9,7 @@ import {
   PostMeasure,
   AllNew,
 } from "../../components/molecules/FemiUnit/FemiUnit";
+import Line from "../../components/atomo/line/Line";
 function UnitFemi() {
   return (
     <>
@@ -20,6 +21,7 @@ function UnitFemi() {
       <GirlsAndMothers />
       <PostMeasure />
       <AllNew />
+      <Line />
       <Footer />
     </>
   );

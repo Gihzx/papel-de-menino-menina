@@ -4,6 +4,7 @@ import { NavBar } from "../../components/molecules/navBar/NavBar";
 import SectionDoe from "../../components/molecules/sectionDoe/SectionDoe";
 import DateDonate from "../../components/dateDonate/DateDonate";
 import TextDoe from "../../components/atomo/textDoe/TextDoe";
+import Line from "../../components/atomo/line/Line";
 function InforDonate() {
   return (
     <>
@@ -12,6 +13,7 @@ function InforDonate() {
       <SectionDoe />
       <DateDonate />
       <TextDoe />
+      <Line />
       <Footer />
     </>
   );

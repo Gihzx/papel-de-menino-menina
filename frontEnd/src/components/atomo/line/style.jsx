@@ -3,10 +3,10 @@ export const Line = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7rem 0 3rem 0;
+  padding: 2rem 0 4rem 0;
 
   p {
-    border: solid 0.5px #3f3e3e;
-    width: 70%;
+    border-bottom: solid 0.5px #3f3e3e;
+    width: 50%;
   }
 `;

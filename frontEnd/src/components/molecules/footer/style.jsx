@@ -25,6 +25,6 @@ export const LestContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: solid 1px black;
-  border-top: solid 1px black;
+  border-bottom: solid 1px #202020;
+  border-top: solid 1px #202020;
 `;
