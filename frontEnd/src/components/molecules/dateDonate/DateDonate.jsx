@@ -1,5 +1,5 @@
 import * as S from "./style.jsx";
-import { PrimaryButton } from "../atomo/button/Primary-button";
+import { PrimaryButton } from "../../atomo/button/Primary-button.jsx";
 function DateDonate() {
   return (
     <>
