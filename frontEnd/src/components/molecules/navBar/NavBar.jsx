@@ -2,20 +2,20 @@ import logoIPM from "../../../assets/logoIPM.png";
 import { PrimaryButton } from "../../atomo/button/Primary-button";
 import { IoIosArrowDown } from "react-icons/io";
 import * as S from "./style.jsx";
-import { useState } from "react";
+import { useRef, useState } from "react";
 export function NavBar() {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-
-    console.log("MUDEI");
-  };
+  const dropDownRef = useRef(null);
+  const [isActive, setIsActive] = useState(false);
+  const onClick = () => setIsActive(!isActive);
+  console.log(isActive);
   return (
     <>
       <header>
-        <nav>
-          <S.div className="menu">
+        <nav
+          ref={dropDownRef}
+          className={`menu ${isActive ? "active" : "inactive"}`}
+        >
+          <S.div className="menuContainer">
             <img src={logoIPM} alt="logoIMP" className="logo" />
 
             <S.nav_list>
@@ -63,11 +63,11 @@ export function NavBar() {
                 </span>
               </ul>
             </S.nav_list>
-            <div className="mobile-menu" onClick={toggleMobileMenu}>
+            <button onClick={onClick} className="mobile-menu">
               <div className="line1"></div>
               <div className="line2"></div>
               <div className="line3"></div>
-            </div>
+            </button>
           </S.div>
         </nav>
       </header>
