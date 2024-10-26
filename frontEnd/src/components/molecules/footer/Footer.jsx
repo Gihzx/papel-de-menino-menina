@@ -31,7 +31,7 @@ function Footer() {
             <p>Facebook</p>
           </div>
           <div>
-            <h4>Acões</h4>
+            <h4>Ações</h4>
             <p> Quem somos?</p>
             <p>Nosso projeto</p>
             <p>Equipe</p>

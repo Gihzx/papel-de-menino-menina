@@ -23,7 +23,7 @@ function SectionDoe() {
             </div>
             <div>
               <PrimaryButton style={{ backgroundColor: "#7D00A2" }}>
-                Seja um voluntário <CiHeart className="heart" />
+                Seja um voluntário <CiHeart />
               </PrimaryButton>
             </div>
           </div>

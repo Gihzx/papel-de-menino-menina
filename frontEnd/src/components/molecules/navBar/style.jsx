@@ -113,4 +113,72 @@ export const nav_list = styled.div`
       display: none;
     }
   }
+  .menuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .mobile-menu .line {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    margin: 4px 0;
+  }
+  /* 
+  Sidebar for mobile view / */
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  /* / Hide sidebar in desktop / */
+  @media (min-width: 769px) {
+    .sidebar {
+      display: none;
+    }
+  }
+
+  /* Show mobile menu and hide desktop menu on mobile view  */
+  @media (max-width: 768px) {
+    .nav_list {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: flex;
+    }
+
+    .sidebar {
+      display: block;
+    }
+  }
 `;

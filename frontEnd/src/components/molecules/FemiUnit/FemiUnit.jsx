@@ -5,9 +5,11 @@ export function FemiUnit() {
       <h1>Unidade feminina</h1>
       <p>
         Começamos nosso trabalho na Unidade Chiquinha Gonzaga, localizada no
-        Bairro da Mooca. A unidade suporta até 110 meninas, dividido em 03
-        módulos Módulo 01 - Meninas de 12 a 15 anos. Módulo 02 - Meninas a
-        partir dos 16 anos. Módulo 03 - Meninas em Gestação ou pós parto (PAMI)
+        Bairro da Mooca.
+        <p>A unidade suporta até 110 meninas, dividido em 03 módulos</p>{" "}
+        <p>Módulo 01 - Meninas de 12 a 15 anos.</p>{" "}
+        <p>Módulo 02 - Meninas a partir dos 16 anos.</p>
+        <p>Módulo 03 - Meninas em Gestação ou pós parto (PAMI)</p>
         As Unidades femininas representam em média 4% da população de jovens da
         Fundação CASA.
       </p>
@@ -49,12 +51,12 @@ export function GirlsAndMothers() {
       <h2>Meninas Mães</h2>
       <p>Desenvolvemos ações educativas sobre:</p>
       <ul>
-        <li>-Saúde da mulher</li>
-        <li>-Gestação</li>
-        <li>-Parto</li>
-        <li>-Amamentação </li>
-        <li>-Puerpério</li>
-        <li>-Cuidados com os bebês</li>
+        <li>Saúde da mulher</li>
+        <li>Gestação</li>
+        <li>Parto</li>
+        <li>Amamentação </li>
+        <li>Puerpério</li>
+        <li>Cuidados com os bebês</li>
       </ul>
       <p>
         Contamos com uma equipe multidisciplinar formada por doulas, psicológos

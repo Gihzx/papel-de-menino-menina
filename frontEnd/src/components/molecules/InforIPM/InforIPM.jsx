@@ -12,8 +12,8 @@ function InforIPM() {
               anos, em privação de liberdade e cumprindo medida socioeducativa
               na cidade de São Paulo. O IPM atua dentro de unidades femininas e
               masculinas da Fundação CASA, oferecendo suporte, aconselhamento e
-              capacitação para que quase dois mil adolescentes por ano poss am
-              se reintegrar na sociedade de forma produtiva e saudável. Somos a
+              capacitação para que quase dois mil adolescentes por ano possam se
+              reintegrar na sociedade de forma produtiva e saudável. Somos a
               única organização social atuando no acolhimento e orientação de
               adolescentes gestantes e mães que estão encarceradas em unidades
               socioeducativas

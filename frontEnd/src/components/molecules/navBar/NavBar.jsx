@@ -2,34 +2,28 @@ import logoIPM from "../../../assets/logoIPM.png";
 import { PrimaryButton } from "../../atomo/button/Primary-button";
 import { IoIosArrowDown } from "react-icons/io";
 import * as S from "./style.jsx";
-import { useRef, useState } from "react";
+import DropdownExample from "../../atomo/dropdown/Dropdown.jsx";
+import { useState } from "react";
+
 export function NavBar() {
-  const dropDownRef = useRef(null);
+  // const dropDownRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
+
   const onClick = () => setIsActive(!isActive);
-  console.log(isActive);
+
   return (
     <>
       <header>
-        <nav
-          ref={dropDownRef}
-          className={`menu ${isActive ? "active" : "inactive"}`}
-        >
+        <nav className="navbar">
           <S.div className="menuContainer">
             <img src={logoIPM} alt="logoIMP" className="logo" />
 
-            <S.nav_list>
+            {/* Menu for Desktop */}
+            <S.nav_list className="menuDesktop">
               <ul>
+                <DropdownExample />
                 <li>
-                  Nossa história{" "}
-                  <IoIosArrowDown
-                    color="#7D00A2"
-                    size={20}
-                    className="arrowDown"
-                  />
-                </li>
-                <li>
-                  Projeto{" "}
+                  Nossa história Projeto{" "}
                   <IoIosArrowDown
                     color="#7D00A2"
                     size={20}
@@ -63,11 +57,32 @@ export function NavBar() {
                 </span>
               </ul>
             </S.nav_list>
+
+            {/* Button to open sidebar (visible in mobile) */}
             <button onClick={onClick} className="mobile-menu">
-              <div className="line1"></div>
-              <div className="line2"></div>
-              <div className="line3"></div>
+              <div className="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
             </button>
+
+            {/* Sidebar for Mobile */}
+            {/* <div className={`sidebar ${isActive ? "active" : ""}`}>
+              <ul>
+                <li>Nossa história</li>
+                <li>Projeto</li>
+                <li>Nossa metodologia</li>
+                <li>Contato</li>
+                <span>
+                  <PrimaryButton
+                    onClick={() => alert("seja bem vindo")}
+                    style={{ backgroundColor: "#7D00A2" }}
+                    className="primary-button"
+                  >
+                    Doe agora
+                  </PrimaryButton>
+                </span>
+              </ul>
+            </div> */}
           </S.div>
         </nav>
       </header>
