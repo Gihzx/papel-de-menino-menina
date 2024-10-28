@@ -27,4 +27,9 @@ export const LestContainer = styled.div`
   justify-content: space-around;
   border-bottom: solid 1px #202020;
   border-top: solid 1px #202020;
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
 `;

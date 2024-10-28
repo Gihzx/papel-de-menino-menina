@@ -16,12 +16,12 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="/inforOng" element={<InforOng />} />
+        <Route path="/equipe" element={<TeamMembers />} />
         <Route path="/doe" element={<InforDonate />} />
-        <Route path="/missao" element={<MissionNgo />} />
+        <Route path="/curso&oficina" element={<MissionNgo />} />
         <Route path="/unidadeMascula" element={<MaleDivision />} />
         <Route path="/unidadeFeminina" element={<UnitFemi />} />
         <Route path="/metodologia" element={<OurMethods />} />
-        <Route path="/equipe" element={<TeamMembers />} />
         <Route path="/imprensa" element={<PressInfo />} />
       </Routes>
     </BrowserRouter>

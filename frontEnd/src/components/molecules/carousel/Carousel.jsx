@@ -1,48 +1,27 @@
-import Carousel from "react-bootstrap/Carousel";
 import * as S from "./style.jsx";
-function CarouselImg() {
+import img from "../../../assets/papeldemeninoemenina.png";
+
+const Carousel = () => {
   return (
     <S.Container>
-      <Carousel slide={false}>
-        <Carousel.Item>
-          <img
-            src="https://papeldemenino.org.br/wp-content/uploads/2023/06/007-1536x1023.jpeg"
-            alt=""
-            className="imgCarousel"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+      <S.AnimatedImage
+        src={img}
+        alt="Imagem Animada"
+        initial={{ scale: 1.09 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
+      />
 
-        <Carousel.Item>
-          <img
-            src="https://papeldemenino.org.br/wp-content/uploads/2023/06/PapelDeMenino-30-de-195-1-scaled.jpg"
-            alt=""
-            className="imgCarousel"
-          />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            src="https://papeldemenino.org.br/wp-content/uploads/2023/06/PapelDeMenino-66-de-195-scaled.jpg"
-            alt=""
-            className="imgCarousel"
-          />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <S.Title>Uma nova chance começa com acolhimento</S.Title>
+      <S.P>
+        No projeto, acreditamos que cada pessoa merece uma oportunidade de
+        recomeçar. Com amor, empatia e cuidado, acolhemos aqueles que buscam um
+        novo caminho, oferecendo suporte e criando um ambiente de transformação
+        e esperança. Aqui, cada história é importante e cada recomeço é
+        celebrado.
+      </S.P>
     </S.Container>
   );
-}
+};
 
-export default CarouselImg;
+export default Carousel;
