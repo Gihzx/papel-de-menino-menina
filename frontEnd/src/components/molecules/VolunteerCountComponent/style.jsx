@@ -5,9 +5,8 @@ export const Conatiner = styled.section`
   justify-content: space-around;
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   padding: 20px;
-
   .item {
     position: relative;
     display: flex;
@@ -16,6 +15,11 @@ export const Conatiner = styled.section`
   }
   .namber {
     color: aliceblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
     font-size: 50px;
     font-weight: 800;
   }

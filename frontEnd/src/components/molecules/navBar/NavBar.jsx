@@ -1,8 +1,9 @@
 import logoIPM from "../../../assets/logoIPM.png";
 import { PrimaryButton } from "../../atomo/button/Primary-button";
 import { IoIosArrowDown } from "react-icons/io";
+import Dropdown from "../../atomo/dropdown/Dropdown.jsx";
+import { Link } from "react-router-dom";
 import * as S from "./style.jsx";
-import DropdownExample from "../../atomo/dropdown/Dropdown.jsx";
 import { useState } from "react";
 
 export function NavBar() {
@@ -17,13 +18,17 @@ export function NavBar() {
         <nav className="navbar">
           <S.div className="menuContainer">
             <img src={logoIPM} alt="logoIMP" className="logo" />
-
-            {/* Menu for Desktop */}
             <S.nav_list className="menuDesktop">
               <ul>
-                <DropdownExample />
                 <li>
-                  Nossa história Projeto{" "}
+                  <Dropdown
+                    options={[
+                      { text: "Quem Somos", link: "/inforOng" },
+                      { text: "Acompanhamento", link: "/" },
+                      { text: "Nossa Metodologia", link: "/metodologia" },
+                    ]}
+                    defaultValue="Nossa historia"
+                  />{" "}
                   <IoIosArrowDown
                     color="#7D00A2"
                     size={20}
@@ -31,7 +36,31 @@ export function NavBar() {
                   />
                 </li>
                 <li>
-                  Nossa metodologia{" "}
+                  {" "}
+                  <Dropdown
+                    options={[
+                      { text: "Unidade Feminina", link: "/unidadeFeminina" },
+                      { text: "Unidade Masculina", link: "/unidadeMascula" },
+                    ]}
+                    defaultValue="Projetos"
+                  />
+                  <IoIosArrowDown
+                    color="#7D00A2"
+                    size={20}
+                    className="arrowDown"
+                  />
+                </li>
+
+                <li>
+                  {" "}
+                  <Dropdown
+                    options={[
+                      { text: "Cursos & Oficinas ", link: "/curso&oficina" },
+                      { text: "Equipe", link: "/equipe" },
+                      { text: "impresa", link: "/imprensa" },
+                    ]}
+                    defaultValue="Apoinhadores"
+                  />
                   <IoIosArrowDown
                     color="#7D00A2"
                     size={20}
@@ -39,31 +68,28 @@ export function NavBar() {
                   />
                 </li>
                 <li>
-                  Contato{" "}
-                  <IoIosArrowDown
-                    color="#7D00A2"
-                    size={20}
-                    className="arrowDown"
-                  />
+                  <Link to="/contato">Contato</Link>
                 </li>
                 <span>
-                  <PrimaryButton
-                    onClick={() => alert("seja bem vindo")}
-                    style={{ backgroundColor: "#7D00A2" }}
-                    className="primary-button"
-                  >
-                    Doe agora
-                  </PrimaryButton>
+                  <Link to="https://www.paypal.com/donate/?hosted_button_id=XWYF36FTCENY2">
+                    {" "}
+                    <PrimaryButton
+                      style={{ backgroundColor: "#7D00A2" }}
+                      className="primary-button"
+                    >
+                      Doe agora
+                    </PrimaryButton>
+                  </Link>
                 </span>
               </ul>
             </S.nav_list>
 
             {/* Button to open sidebar (visible in mobile) */}
-            <button onClick={onClick} className="mobile-menu">
+            {/* <button onClick={onClick} className="mobile-menu">
               <div className="line"></div>
               <div className="line"></div>
               <div className="line"></div>
-            </button>
+            </button> */}
 
             {/* Sidebar for Mobile */}
             {/* <div className={`sidebar ${isActive ? "active" : ""}`}>

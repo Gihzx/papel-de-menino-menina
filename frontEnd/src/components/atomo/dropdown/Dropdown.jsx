@@ -1,15 +1,46 @@
-import { Dropdown, Menu } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import * as S from "./style.jsx";
+import { useState } from "react";
 
-const options = [
-  { key: 1, text: "Choice 1", value: 1 },
-  { key: 2, text: "Choice 2", value: 2 },
-  { key: 3, text: "Choice 3", value: 3 },
-];
+function Dropdown({ options, defaultValue }) {
+  const [open, setOpen] = useState(false);
+  const [selectedValue, setSelectedValue] = useState(defaultValue);
 
-const DropdownExample = () => (
-  <Menu compact>
-    <Dropdown text="Dropdown" options={options} simple item />
-  </Menu>
-);
+  const handleMouseEnter = () => {
+    setOpen(true);
+  };
 
-export default DropdownExample;
+  const handleMouseLeave = () => {
+    setOpen(false);
+  };
+
+  return (
+    <div
+      className="dropdown-container"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="selected-value">{selectedValue}</div>
+
+      {open && (
+        <S.Div className="dropdown-menu">
+          <ul>
+            {options.map((option, index) => (
+              <li key={index}>
+                <Link
+                  to={option.link}
+                  onClick={() => setSelectedValue(option.text)}
+                  className="link"
+                >
+                  {option.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </S.Div>
+      )}
+    </div>
+  );
+}
+
+export default Dropdown;

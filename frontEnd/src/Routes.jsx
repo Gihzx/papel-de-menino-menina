@@ -10,19 +10,18 @@ import OurMethods from "./pages/ourMethods/OurMethods";
 import TeamMembers from "./pages/TeamMembers/TeamMembers";
 import PressInfo from "./pages/PressInfo/PressInfo";
 function AppRoutes() {
-  
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="/inforOng" element={<InforOng />} />
+        <Route path="/equipe" element={<TeamMembers />} />
         <Route path="/doe" element={<InforDonate />} />
         <Route path="/curso&oficina" element={<MissionNgo />} />
         <Route path="/unidadeMascula" element={<MaleDivision />} />
         <Route path="/unidadeFeminina" element={<UnitFemi />} />
         <Route path="/metodologia" element={<OurMethods />} />
-        <Route path="/equipe" element={<TeamMembers />} />
         <Route path="/imprensa" element={<PressInfo />} />
       </Routes>
     </BrowserRouter>

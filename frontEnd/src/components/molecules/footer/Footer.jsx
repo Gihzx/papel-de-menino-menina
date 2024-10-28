@@ -33,7 +33,6 @@ function Footer() {
           <div>
             <h4>Ações</h4>
             <p> Quem somos?</p>
-            <p>Nosso projeto</p>
             <p>Equipe</p>
             <p>Contato</p>
           </div>

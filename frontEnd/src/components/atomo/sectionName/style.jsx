@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: #7d00a2;
   padding: 1rem;
-
+  margin-top: 6rem;
   h2 {
     color: aliceblue;
     margin-left: 6%;

@@ -1,9 +1,13 @@
 import styled from "styled-components";
 export const div = styled.div`
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: aliceblue;
+  width: 100%;
+  z-index: 1;
+  top: 0;
 
   @media (max-width: 375px) {
     padding: 10px 24px;
