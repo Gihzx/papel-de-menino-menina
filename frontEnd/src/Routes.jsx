@@ -9,6 +9,7 @@ import UnitFemi from "./pages/UnitFemi/UnitFemi";
 import OurMethods from "./pages/ourMethods/OurMethods";
 import TeamMembers from "./pages/TeamMembers/TeamMembers";
 import PressInfo from "./pages/PressInfo/PressInfo";
+import ProjectIPM from "./pages/projectIPM/ProjectIPM";
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function AppRoutes() {
         <Route path="/unidadeFeminina" element={<UnitFemi />} />
         <Route path="/metodologia" element={<OurMethods />} />
         <Route path="/imprensa" element={<PressInfo />} />
+        <Route path="/projetoIPM" element={<ProjectIPM />} />
       </Routes>
     </BrowserRouter>
   );

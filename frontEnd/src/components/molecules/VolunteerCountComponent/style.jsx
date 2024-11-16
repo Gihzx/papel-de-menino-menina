@@ -27,10 +27,7 @@ export const Conatiner = styled.section`
     font-weight: 600;
     font-size: 19px;
   }
-  @media (max-width: 375px) {
-    display: flex;
-    flex-direction: column;
-  }
+
   @media (max-width: 1440px) {
     position: relative;
     display: flex;
@@ -38,5 +35,14 @@ export const Conatiner = styled.section`
     .item {
       width: 100%;
     }
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
   }
 `;

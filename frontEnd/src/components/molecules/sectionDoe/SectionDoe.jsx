@@ -1,6 +1,6 @@
 import * as S from "./style.jsx";
 import { PrimaryButton } from "../../atomo/button/Primary-button";
-import { CiHeart } from "react-icons/ci";
+
 function SectionDoe() {
   return (
     <>
@@ -23,7 +23,7 @@ function SectionDoe() {
             </div>
             <div>
               <PrimaryButton style={{ backgroundColor: "#7D00A2" }}>
-                Seja um voluntário <CiHeart />
+                Seja um voluntário
               </PrimaryButton>
             </div>
           </div>

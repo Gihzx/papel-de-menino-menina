@@ -10,9 +10,9 @@ export const Div = styled.div`
     display: flex;
     flex-direction: column;
   }
-  ul li Link .link {
+  li a {
     color: #7d00a2;
-    padding: 20px;
+    padding: 7px 0 7px 0;
     text-decoration: none;
   }
 `;

@@ -11,6 +11,7 @@ export const Header = styled.header`
 export const Section = styled.section`
   padding: 3% 7%;
   display: flex;
+  text-align: center;
 
   .item {
     display: flex;

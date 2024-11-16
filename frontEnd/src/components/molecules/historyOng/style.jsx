@@ -19,6 +19,17 @@ export const Container = styled.section`
     height: 690px;
     object-fit: cover;
   }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 88%;
+    .pictureSection {
+      width: 65%;
+    }
+  }
   @media (max-width: 375px) {
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +50,11 @@ export const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 1024) {
+
+  @media (max-width: 1024px) {
+    margin-left: 20px;
+  }
+  @media (max-width: 768px) {
     margin-left: 20px;
   }
 `;

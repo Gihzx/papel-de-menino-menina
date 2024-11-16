@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import * as S from "./style.jsx";
+
 import { useState } from "react";
 
 function Dropdown({ options, defaultValue }) {
@@ -30,7 +31,6 @@ function Dropdown({ options, defaultValue }) {
                 <Link
                   to={option.link}
                   onClick={() => setSelectedValue(option.text)}
-                  className="link"
                 >
                   {option.text}
                 </Link>

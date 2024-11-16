@@ -1,6 +1,41 @@
 import * as S from "./style.jsx";
 import { PrimaryButton } from "../../atomo/button/Primary-button.jsx";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 function UserContact() {
+  const [assunto, setAssunto] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function sendEmail(e) {
+    e.preventDefault();
+    if (assunto === "" || email === "" || message === "") {
+      alert("preenhca todos os campos");
+    }
+    const templateParams = {
+      from_name: assunto,
+      message: message,
+      email: email,
+    };
+    emailjs
+      .send(
+        "service_bl5m93f",
+        "template_yw9u30g",
+        templateParams,
+        "yFaDSg1wmvVh5Kt-7"
+      )
+      .then(
+        (response) => {
+          console.log("enail enviado", response.status, response.text);
+          setAssunto("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log("erro:", error);
+        }
+      );
+  }
   return (
     <>
       <S.Div>
@@ -32,24 +67,43 @@ function UserContact() {
             <p>instagram.com/ipapeldemenino</p>
           </div>
         </div>
-        <div className="inputs">
-          <div>
-            <input type="text" name="" id="" placeholder="E-mail" />
-            <p>
-              <input type="text" name="" id="" placeholder="Assunto" />
-            </p>
-            <textarea name="" id="" placeholder="Mensage..."></textarea>
-          </div>
+        <form onSubmit={sendEmail}>
+          <div className="inputs">
+            <div>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="E-mail"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <p>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Assunto"
+                  onChange={(e) => setAssunto(e.target.value)}
+                />
+              </p>
+              <textarea
+                name=""
+                id=""
+                placeholder="Mensage..."
+                onChange={(e) => setMessage(e.target.value)}
+              ></textarea>
+            </div>
 
-          <div>
-            <PrimaryButton
-              style={{ backgroundColor: "#ff9029" }}
-              className="primary-button"
-            >
-              Saber mais
-            </PrimaryButton>
+            <div>
+              <PrimaryButton
+                style={{ backgroundColor: "#ff9029" }}
+                className="primary-button"
+              >
+                Saber mais
+              </PrimaryButton>
+            </div>
           </div>
-        </div>
+        </form>
       </S.Container>
     </>
   );

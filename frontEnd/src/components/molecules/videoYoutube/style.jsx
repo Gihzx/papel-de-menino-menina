@@ -10,9 +10,14 @@ export const Container = styled.section`
     width: 900px;
     height: 500px;
   }
+  @media (max-width: 768px) {
+    .VideoYoutube {
+      width: 99vw;
+    }
+  }
   @media (max-width: 375px) {
     .VideoYoutube {
-      width: 21.8rem;
+      width: 21.5rem;
     }
   }
   h1 {

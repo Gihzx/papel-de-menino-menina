@@ -22,7 +22,7 @@ function Footer() {
           <div>
             <h4>Contatos</h4>
             <p>Telefone:</p>
-            <p>WhatsApp</p>
+            <p>WhatsApp: asas</p>
             <p>E-mail</p>
           </div>
           <div>
@@ -32,7 +32,7 @@ function Footer() {
           </div>
           <div>
             <h4>Ações</h4>
-            <p> Quem somos?</p>
+            <p>Quem somos?</p>
             <p>Equipe</p>
             <p>Contato</p>
           </div>
