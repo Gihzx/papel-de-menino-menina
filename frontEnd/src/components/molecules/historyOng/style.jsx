@@ -35,7 +35,7 @@ export const Container = styled.section`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 20px;
     width: 88%;
     .pictureSection {
       width: 97%;

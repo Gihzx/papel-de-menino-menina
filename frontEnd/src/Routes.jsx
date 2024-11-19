@@ -19,7 +19,7 @@ function AppRoutes() {
         <Route path="/inforOng" element={<InforOng />} />
         <Route path="/equipe" element={<TeamMembers />} />
         <Route path="/doe" element={<InforDonate />} />
-        <Route path="/curso&oficina" element={<MissionNgo />} />
+        <Route path="/cursoeoficina" element={<MissionNgo />} />
         <Route path="/unidadeMascula" element={<MaleDivision />} />
         <Route path="/unidadeFeminina" element={<UnitFemi />} />
         <Route path="/metodologia" element={<OurMethods />} />

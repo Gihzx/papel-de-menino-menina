@@ -10,6 +10,7 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 1.5rem;
     input {
       padding: 1rem;
       width: 300px;
