@@ -1,27 +1,41 @@
 import logoIPM from "../../../assets/logoIPM.png";
 import { PrimaryButton } from "../../atomo/button/Primary-button";
 import { IoIosArrowDown } from "react-icons/io";
+import MenuComponent from "../sidebar/SideBar.jsx";
+import Dropdown from "../../atomo/dropdown/Dropdown.jsx";
+import { Link } from "react-router-dom";
 import * as S from "./style.jsx";
-import { useRef, useState } from "react";
 export function NavBar() {
-  const dropDownRef = useRef(null);
-  const [isActive, setIsActive] = useState(false);
-  const onClick = () => setIsActive(!isActive);
-  console.log(isActive);
   return (
     <>
+      <MenuComponent />
       <header>
-        <nav
-          ref={dropDownRef}
-          className={`menu ${isActive ? "active" : "inactive"}`}
-        >
-          <S.div className="menuContainer">
-            <img src={logoIPM} alt="logoIMP" className="logo" />
-
-            <S.nav_list>
+        <nav className="navbar">
+          <S.Div className="menuContainer">
+            <Link to="/">
+              {" "}
+              <img src={logoIPM} alt="logoIMP" className="logo" />
+            </Link>
+            <S.Nav_list className="menuDesktop">
               <ul>
                 <li>
-                  Nossa história{" "}
+                  <Dropdown
+                    options={[
+                      {
+                        text: "Quem Somos",
+                        link: "/inforOng",
+                      },
+                      {
+                        text: "Nossos projetos",
+                        link: "/projetoIPM",
+                      },
+                      {
+                        text: "Nossa Metodologia",
+                        link: "/metodologia",
+                      },
+                    ]}
+                    defaultValue="Nossa historia"
+                  />{" "}
                   <IoIosArrowDown
                     color="#7D00A2"
                     size={20}
@@ -29,46 +43,62 @@ export function NavBar() {
                   />
                 </li>
                 <li>
-                  Projeto{" "}
+                  {" "}
+                  <Dropdown
+                    options={[
+                      { text: "Unidade Feminina", link: "/unidadeFeminina" },
+                      { text: "Unidade Masculina", link: "/unidadeMascula" },
+                    ]}
+                    defaultValue="Projetos"
+                  />
                   <IoIosArrowDown
                     color="#7D00A2"
                     size={20}
                     className="arrowDown"
                   />
                 </li>
+
                 <li>
-                  Nossa metodologia{" "}
+                  {" "}
+                  <Dropdown
+                    options={[
+                      { text: "Cursos & Oficinas ", link: "/curso&oficina" },
+                      { text: "impresa", link: "/imprensa" },
+                    ]}
+                    defaultValue="Apoinhadores"
+                  />
                   <IoIosArrowDown
                     color="#7D00A2"
                     size={20}
                     className="arrowDown"
                   />
                 </li>
-                <li>
-                  Contato{" "}
-                  <IoIosArrowDown
-                    color="#7D00A2"
-                    size={20}
-                    className="arrowDown"
-                  />
-                </li>
+
                 <span>
-                  <PrimaryButton
-                    onClick={() => alert("seja bem vindo")}
-                    style={{ backgroundColor: "#7D00A2" }}
-                    className="primary-button"
-                  >
-                    Doe agora
-                  </PrimaryButton>
+                  <Link to="/contato">
+                    {" "}
+                    <PrimaryButton
+                      style={{ backgroundColor: "aliceblue", color: "#00000" }}
+                      className="primary-button"
+                    >
+                      Contato
+                    </PrimaryButton>
+                  </Link>
+                </span>
+                <span>
+                  <Link to="https://www.paypal.com/donate/?hosted_button_id=XWYF36FTCENY2">
+                    {" "}
+                    <PrimaryButton
+                      style={{ backgroundColor: "#7D00A2", color: "aliceblue" }}
+                      className="primary-button"
+                    >
+                      Doe agora
+                    </PrimaryButton>
+                  </Link>
                 </span>
               </ul>
-            </S.nav_list>
-            <button onClick={onClick} className="mobile-menu">
-              <div className="line1"></div>
-              <div className="line2"></div>
-              <div className="line3"></div>
-            </button>
-          </S.div>
+            </S.Nav_list>
+          </S.Div>
         </nav>
       </header>
     </>

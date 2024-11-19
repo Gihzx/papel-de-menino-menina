@@ -7,6 +7,7 @@ export const Container = styled.section`
 
   padding: 7%;
   p {
+    text-align: center;
     color: #ba6414;
     font-size: 19px;
     font-weight: 600;

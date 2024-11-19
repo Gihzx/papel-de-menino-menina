@@ -5,6 +5,7 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
   padding: 40px;
+
   h3 {
     color: #ba6414;
   }

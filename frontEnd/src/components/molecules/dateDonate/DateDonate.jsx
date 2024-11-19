@@ -1,5 +1,7 @@
 import * as S from "./style.jsx";
+import { Link } from "react-router-dom";
 import { PrimaryButton } from "../../atomo/button/Primary-button.jsx";
+
 function DateDonate() {
   return (
     <>
@@ -21,13 +23,19 @@ function DateDonate() {
             </div>
           </div>
           <div>
-            <PrimaryButton
-              onClick={() => alert("seja bem vindo")}
-              style={{ backgroundColor: "rgb(255, 144, 41)" }}
-              className="primary-button"
-            >
-              Doe com paypal
-            </PrimaryButton>
+            <Link to="https://www.paypal.com/donate/?hosted_button_id=XWYF36FTCENY2">
+              {" "}
+              <PrimaryButton
+                style={{
+                  backgroundColor: "rgb(255, 144, 41)",
+                  color: "aliceblue",
+                  width: 170,
+                }}
+                className="primary-button"
+              >
+                Doe agora
+              </PrimaryButton>
+            </Link>
           </div>
         </div>
       </S.Container>

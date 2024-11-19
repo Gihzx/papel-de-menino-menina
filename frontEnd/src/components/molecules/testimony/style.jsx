@@ -11,10 +11,15 @@ export const Header = styled.header`
 export const Section = styled.section`
   padding: 3% 7%;
   display: flex;
+  text-align: center;
+
   .item {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    gap: 20px;
+    padding: 1rem;
     p {
       width: 40%;
     }
