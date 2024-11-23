@@ -8,7 +8,6 @@ export const Container = styled.section`
 
   h1 {
     color: #ba6414;
-    width: 300px;
   }
   .line {
     border-bottom: #7d00a2;

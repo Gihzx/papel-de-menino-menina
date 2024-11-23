@@ -1,6 +1,6 @@
 import * as S from "./style.jsx";
 import ImgMetodologia from "../../../assets/WhatsApp-Image-2023-06-17-at-17.37.44.svg";
-import ImgFormMetodologia from "../../../assets/Captura de tela 2024-09-26 211116.png";
+import ImgFormMetodologia from "../../../assets/Captura_de_tela_2024-09-26_211116-removebg-preview.png";
 export function OurMethodology() {
   return (
     <S.Container>

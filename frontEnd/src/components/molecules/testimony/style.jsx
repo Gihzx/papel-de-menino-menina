@@ -4,6 +4,7 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   h2 {
     color: #ba6414;
   }
@@ -12,12 +13,13 @@ export const Section = styled.section`
   padding: 3% 7%;
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
 
   .item {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-wrap: wrap;
     gap: 20px;
     padding: 1rem;
     p {

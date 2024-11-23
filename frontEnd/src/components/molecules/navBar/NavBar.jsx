@@ -62,7 +62,7 @@ export function NavBar() {
                   {" "}
                   <Dropdown
                     options={[
-                      { text: "Cursos & Oficinas ", link: "/curso&oficina" },
+                      { text: "Cursos & Oficinas ", link: "/cursoeoficina" },
                       { text: "impresa", link: "/imprensa" },
                     ]}
                     defaultValue="Apoinhadores"
@@ -78,7 +78,7 @@ export function NavBar() {
                   <Link to="/contato">
                     {" "}
                     <PrimaryButton
-                      style={{ backgroundColor: "aliceblue", color: "#00000" }}
+                      style={{ backgroundColor: "aliceblue", color: "#7D00A2" }}
                       className="primary-button"
                     >
                       Contato

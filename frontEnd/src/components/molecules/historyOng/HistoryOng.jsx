@@ -5,6 +5,11 @@ function HistoryOng() {
   return (
     <>
       <S.Container>
+        <img
+          src={imgHomem}
+          alt="Imagem de um homem"
+          className="pictureSection"
+        />
         <S.Div>
           <S.Section>
             <header>
@@ -33,12 +38,6 @@ function HistoryOng() {
             Saber mais
           </PrimaryButton>
         </S.Div>
-
-        <img
-          src={imgHomem}
-          alt="Imagem de um homem"
-          className="pictureSection"
-        />
       </S.Container>
     </>
   );
