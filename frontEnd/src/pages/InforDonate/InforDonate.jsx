@@ -9,7 +9,7 @@ function InforDonate() {
   return (
     <>
       <NavBar />
-      <SectionName>Doe</SectionName>
+      <SectionName>Voluntário</SectionName>
       <SectionDoe />
       <DateDonate />
       <TextDoe />

@@ -10,6 +10,7 @@ import OurMethods from "./pages/ourMethods/OurMethods";
 import TeamMembers from "./pages/TeamMembers/TeamMembers";
 import PressInfo from "./pages/PressInfo/PressInfo";
 import ProjectIPM from "./pages/projectIPM/ProjectIPM";
+import CommentsPre from "./pages/commentsPre/CommentsPre";
 function AppRoutes() {
   return (
     <BrowserRouter>
@@ -18,13 +19,14 @@ function AppRoutes() {
         <Route path="/contato" element={<Contact />} />
         <Route path="/inforOng" element={<InforOng />} />
         <Route path="/equipe" element={<TeamMembers />} />
-        <Route path="/doe" element={<InforDonate />} />
+        <Route path="/condeca" element={<InforDonate />} />
         <Route path="/cursoeoficina" element={<MissionNgo />} />
         <Route path="/unidadeMascula" element={<MaleDivision />} />
         <Route path="/unidadeFeminina" element={<UnitFemi />} />
         <Route path="/metodologia" element={<OurMethods />} />
         <Route path="/imprensa" element={<PressInfo />} />
         <Route path="/projetoIPM" element={<ProjectIPM />} />
+        <Route path="/comentario-presidente" element={<CommentsPre />} />
       </Routes>
     </BrowserRouter>
   );

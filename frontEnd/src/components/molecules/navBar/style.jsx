@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const Div = styled.div`
   position: fixed;
   display: flex;
@@ -8,54 +9,63 @@ export const Div = styled.div`
   width: 100%;
   z-index: 1;
   top: 0;
+  border-bottom: solid 3px #7d00a2;
+  /* padding: 10px 24px; */
 
-  /* @media (max-width: 375px) {
-    padding: 10px 24px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-
-    .menu {
-      cursor: pointer;
-      opacity: 0;
-    }
-    .menu .active div {
-      opacity: 1;
-      visibility: visible;
-      width: 1.5rem;
-      height: 2px;
-      margin: 5px;
-      background-color: #0d0d0e;
-    }
-  } */
-  @media (max-width: 375px) {
-    padding: 10px;
+  .hamburger-menu {
+    display: none; /* Esconde o botão no desktop */
+    cursor: pointer;
+    z-index: 2;
   }
-  @media (max-width: 824px) {
-    ul {
-      display: none;
-    }
-    li {
-      display: none;
-    }
-    /* padding: 10px 24px;
-    position: relative;
-    justify-content: space-between;
 
-    .menu {
-      cursor: pointer;
-      opacity: 0;
+  .hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #7d00a2;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger-menu.active div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-menu.active div:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-menu.active div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  @media (max-width: 824px) {
+    padding: 10px;
+
+    .hamburger-menu {
+      display: block; /* Mostra o botão no mobile */
     }
-    .menu .active div {
-      opacity: 1;
-      visibility: visible;
-      width: 1.5rem;
-      height: 2px;
-      margin: 5px;
-      background-color: #0d0d0e;
-    } */
+
+    ul {
+      display: none; /* Esconde o menu no mobile */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: aliceblue;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      width: 200px;
+      padding: 10px;
+    }
+
+    ul.active {
+      display: flex; /* Mostra o menu ao ativar o hambúrguer */
+    }
+
+    li {
+      margin: 10px 0;
+    }
   }
 `;
+
 export const Nav_list = styled.div`
   ul {
     display: flex;
@@ -69,33 +79,23 @@ export const Nav_list = styled.div`
     cursor: pointer;
     z-index: 1;
   }
+
   .dropdown-item {
     padding: 8px 12px;
     cursor: pointer;
   }
 
-  /* Efeito hover para as opções do dropdown */
   .dropdown-item:hover {
-    background-color: #caa1d6; /* Cor de fundo para o hover */
-    color: #fff; /* Cor do texto ao passar o mouse */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Transição suave */
+    background-color: #caa1d6;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
   }
+
   .arrowDown {
     margin-left: 5px;
   }
-  .menuContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-  .nav_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  /* Telas pequenas (smartphones em modo retrato) */
   @media (max-width: 480px) {
     ul {
       display: none;
@@ -104,135 +104,4 @@ export const Nav_list = styled.div`
       padding: 20px;
     }
   }
-
-  /* Telas médias (smartphones em modo paisagem e tablets em modo retrato) */
-  @media (max-width: 768px) {
-    /* Ajustes para telas médias, como mudanças de layout ou redução de fontes */
-  }
-
-  /* Telas grandes (tablets em modo paisagem e desktops menores) */
-  @media (max-width: 1024px) {
-    /* Ajustes para telas maiores, como tablets em paisagem ou laptops */
-  }
-
-  /* Telas extra-grandes (laptops grandes e desktops) */
-  @media (max-width: 1200px) {
-    /* Ajustes para telas bem grandes, se necessário */
-  }
-  @media (max-width: 375px) {
-    padding: 30px;
-    ul {
-      display: none;
-    }
-    li {
-      padding: 20px;
-    }
-    /* ul {
-      position: absolute;
-      list-style: none;
-      display: flex;
-      align-items: start;
-      flex-direction: column;
-      margin-top: 2.5rem;
-      padding: 10px;
-      width: 90vw;
-      height: 92vh;
-      right: 0;
-      margin-right: 15px;
-      background-color: aliceblue;
-    }
-    li {
-      padding: 10px 0;
-      display: flex;
-      margin: 0 0;
-      align-items: start;
-      cursor: pointer;
-    }
-    .arrowDown {
-      display: none;
-    } */
-  }
-  @media (max-width: 824px) {
-    /* ul {
-      position: absolute;
-      list-style: none;
-      display: flex;
-      align-items: start;
-      flex-direction: column;
-      margin-top: 2.5rem;
-      padding: 10px;
-      width: 90vw;
-      height: 92vh;
-      right: 0;
-      margin-right: 15px;
-      background-color: aliceblue;
-    }
-    li {
-      padding: 10px 0;
-      display: flex;
-      margin: 0 0;
-      align-items: start;
-      cursor: pointer;
-    }
-    .arrowDown {
-      display: none;
-    } */
-  }
-
-  /* .mobile-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-  }
-
-  .mobile-menu .line {
-    width: 100%;
-    height: 4px;
-    background-color: #000;
-    margin: 4px 0;
-  }
-  */
-  /*Sidebar for mobile view / */
-  /* .sidebar {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #ac1111;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .sidebar.active {
-    transform: translateX(0);
-  } */
-
-  /* / Hide sidebar in desktop / */
-  /* @media (min-width: 769px) {
-    .sidebar {
-      display: none;
-    }
-  } */
-
-  /* Show mobile menu and hide desktop menu on mobile view  */
-  /* @media (max-width: 768px) {
-    .nav_list {
-      display: none;
-    }
-
-    .mobile-menu {
-      display: flex;
-    }
-
-    .sidebar {
-      display: block;
-    }
-  } */
 `;
