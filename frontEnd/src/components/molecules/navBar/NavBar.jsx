@@ -148,7 +148,7 @@ export function NavBar() {
                   </li>
                   <li>
                     <Dropdown
-                      options={[{ text: "Volutário", link: "/condeca" }]}
+                      options={[{ text: "Volutário", link: "/voluntario" }]}
                       defaultValue="Doação"
                     />
                     <IoIosArrowDown color="#7D00A2" size={20} />

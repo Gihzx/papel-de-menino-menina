@@ -1,6 +1,6 @@
 import * as S from "./style.jsx";
 import { PrimaryButton } from "../../atomo/button/Primary-button";
-
+import { FaRegHeart } from "react-icons/fa6";
 function SectionDoe() {
   return (
     <>
@@ -8,7 +8,9 @@ function SectionDoe() {
         <header>
           <div>
             <p className="paragrafro">Como posso ajudar?</p>
-            <h1>SEJA UM VOLUNTÁRIO</h1>
+            <h1>
+              SEJA UM VOLUNTÁRIO <FaRegHeart />
+            </h1>
           </div>
         </header>
         <main>
@@ -26,7 +28,7 @@ function SectionDoe() {
             </div>
             <div>
               <PrimaryButton style={{ backgroundColor: "#7D00A2" }}>
-                Seja um voluntário
+                Quero ser um voluntário
               </PrimaryButton>
             </div>
           </div>
@@ -86,10 +88,11 @@ function SectionDoe() {
             <p>
               Podem investir em projetos culturais, esportivos e de saúde
               aprovador pelas leis de incetivos (Federal, Estadual e Municipal)
-              empresas tributadas em <span>LUCRO REAL</span> (com faturamento
-              acima de R$48 milhões), deduzindo até 4% de IR devido, e as
-              pessoas físcais, que fazem a declaração de{" "}
-              <span>MODO COMPLETO,</span> podem deduzir até 6% de IR devido.
+              empresas tributadas em <span className="txt">LUCRO REAL</span>{" "}
+              (com faturamento acima de R$48 milhões), deduzindo até 4% de IR
+              devido, e as pessoas físcais, que fazem a declaração de{" "}
+              <span className="txt">MODO COMPLETO,</span> podem deduzir até 6%
+              de IR devido.
             </p>
           </div>
           <div>

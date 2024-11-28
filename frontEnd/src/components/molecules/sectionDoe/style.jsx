@@ -5,8 +5,12 @@ export const Container = styled.section`
   h1 {
     color: #ba6414;
     font-size: 30px;
-    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: max-content;
   }
+
   .paragrafro {
     font-size: 19px;
     color: #7d00a2;
@@ -19,5 +23,9 @@ export const Container = styled.section`
   span {
     color: #ba6414;
     font-weight: 500;
+  }
+  .txt {
+    color: black;
+    font-weight: 600;
   }
 `;
