@@ -6,10 +6,12 @@ export const Container = styled.section`
   background-color: #7d00a2;
   padding: 3% 7%;
   gap: 40px;
+  flex-wrap: wrap;
   .inputs {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 1.5rem;
     input {
       padding: 1rem;
       width: 300px;

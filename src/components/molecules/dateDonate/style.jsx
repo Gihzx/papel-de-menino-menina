@@ -5,6 +5,7 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
   padding: 40px;
+  flex-wrap: wrap;
 
   h3 {
     color: #ba6414;
@@ -13,6 +14,7 @@ export const Container = styled.main`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   .textH3 {
     display: flex;

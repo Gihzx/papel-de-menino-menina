@@ -7,13 +7,16 @@ function VolunteerCountComponent() {
         <span>
           <div className="item">
             <div className="namber">
-              <CountUp start={0} end={18} duration={2.5} />+
+              +
+              <CountUp start={0} end={18} duration={2.5} />
             </div>
             <p>Ano de trabalho</p>
           </div>
           <div className="item">
             <div className="namber">
-              <CountUp start={0} end={1952} duration={2.5} />+
+              +
+              <CountUp start={0} end={1} duration={2.5} />
+              Mil
             </div>
             <p>Adolescentes por ano</p>
           </div>
@@ -21,15 +24,13 @@ function VolunteerCountComponent() {
         <div>
           <div className="item">
             <div className="namber">
-              {" "}
-              <CountUp start={0} end={100} duration={2.5} />+
+              + <CountUp start={0} end={100} duration={2.5} />
             </div>
             <p>Voluntários cadastrados</p>
           </div>
           <div className="item">
             <div className="namber">
-              {" "}
-              <CountUp start={0} end={15} duration={2.5} />+
+              + <CountUp start={0} end={15} duration={2.5} />
             </div>
             <p>Membros de esquipe ativos</p>
           </div>
@@ -37,15 +38,14 @@ function VolunteerCountComponent() {
         <div>
           <div className="item">
             <div className="namber">
-              {" "}
-              <CountUp start={0} end={5} duration={2.5} />+
+              + <CountUp start={0} end={5} duration={2.5} />
             </div>
             <p>Curso ativos</p>
           </div>
           <div className="item">
             <div className="namber">
-              {" "}
-              <CountUp start={0} end={500000} duration={2.5} />+
+              + <CountUp start={0} end={50} duration={2.5} />
+              Mil
             </div>
             <p>Custo mensal</p>
           </div>
