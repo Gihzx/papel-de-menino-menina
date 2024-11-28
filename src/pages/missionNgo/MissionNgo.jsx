@@ -7,7 +7,7 @@ import {
   WorkshopActivity,
   DigitalLiteracy,
   BarbershopServices,
-} from "../../components/atomo/activities/communityBakery";
+} from "../../components/atomo/activities/CommunityBakery";
 import Line from "../../components/atomo/line/Line";
 function MissionNgo() {
   return (
