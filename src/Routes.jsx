@@ -12,26 +12,32 @@ import PressInfo from "./pages/PressInfo/PressInfo";
 import ProjectIPM from "./pages/projectIPM/ProjectIPM";
 import CommentsPre from "./pages/commentsPre/CommentsPre";
 import Condensed from "./pages/condensed/Condensed";
+// import NavBar from "./components/molecules/navBar/NavBar";
+import Footer from "./components/molecules/footer/Footer";
 
 function AppRoutes() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contato" element={<Contact />} />
-        <Route path="/inforOng" element={<InforOng />} />
-        <Route path="/equipe" element={<TeamMembers />} />
-        <Route path="/voluntario" element={<InforDonate />} />
-        <Route path="/cursoeoficina" element={<MissionNgo />} />
-        <Route path="/unidadeMascula" element={<MaleDivision />} />
-        <Route path="/unidadeFeminina" element={<UnitFemi />} />
-        <Route path="/metodologia" element={<OurMethods />} />
-        <Route path="/imprensa" element={<PressInfo />} />
-        <Route path="/projetoIPM" element={<ProjectIPM />} />
-        <Route path="/comentario-presidente" element={<CommentsPre />} />
-        <Route path="condeca" element={<Condensed />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      {/* <NavBar/> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contato" element={<Contact />} />
+          <Route path="/inforOng" element={<InforOng />} />
+          <Route path="/equipe" element={<TeamMembers />} />
+          <Route path="/voluntario" element={<InforDonate />} />
+          <Route path="/cursoeoficina" element={<MissionNgo />} />
+          <Route path="/unidadeMascula" element={<MaleDivision />} />
+          <Route path="/unidadeFeminina" element={<UnitFemi />} />
+          <Route path="/metodologia" element={<OurMethods />} />
+          <Route path="/imprensa" element={<PressInfo />} />
+          <Route path="/projetoIPM" element={<ProjectIPM />} />
+          <Route path="/comentario-presidente" element={<CommentsPre />} />
+          <Route path="condeca" element={<Condensed />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 export default AppRoutes;

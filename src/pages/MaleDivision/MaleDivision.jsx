@@ -1,5 +1,4 @@
 import { NavBar } from "../../components/molecules/navBar/NavBar";
-import Footer from "../../components/molecules/footer/Footer";
 import {
   MaleUnit,
   FormationClass,
@@ -14,7 +13,6 @@ function MaleDivision() {
       <MaleUnit />
       <FormationClass />
       <Line />
-      <Footer />
     </>
   );
 }

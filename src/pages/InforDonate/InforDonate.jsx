@@ -1,5 +1,4 @@
 import SectionName from "../../components/atomo/sectionName/SectionName";
-import Footer from "../../components/molecules/footer/Footer";
 import { NavBar } from "../../components/molecules/navBar/NavBar";
 import SectionDoe from "../../components/molecules/sectionDoe/SectionDoe";
 import DateDonate from "../../components/molecules/dateDonate/DateDonate";
@@ -14,7 +13,6 @@ function InforDonate() {
       <DateDonate />
       <TextDoe />
       <Line />
-      <Footer />
     </>
   );
 }

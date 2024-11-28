@@ -1,4 +1,3 @@
-import Footer from "../../components/molecules/footer/Footer";
 import { NavBar } from "../../components/molecules/navBar/NavBar";
 import SectionName from "../../components/atomo/sectionName/SectionName";
 import {
@@ -22,7 +21,6 @@ function UnitFemi() {
       <PostMeasure />
       <AllNew />
       <Line />
-      <Footer />
     </>
   );
 }

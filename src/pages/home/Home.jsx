@@ -4,9 +4,9 @@ import VolunteerCountComponent from "../../components/molecules/VolunteerCountCo
 import VideoYoutube from "../../components/molecules/videoYoutube/VideoYoutube";
 import UserContact from "../../components/molecules/userContact/UserContact";
 import Testimony from "../../components/molecules/testimony/Testimony";
-import Footer from "../../components/molecules/footer/Footer";
 import Carousel from "../../components/molecules/carousel/Carousel";
 import CarrosselParceiros from "../../components/molecules/partner/Partner";
+
 function Home() {
   return (
     <>
@@ -18,7 +18,6 @@ function Home() {
       <UserContact />
       <Testimony />
       <CarrosselParceiros />
-      <Footer />
     </>
   );
 }

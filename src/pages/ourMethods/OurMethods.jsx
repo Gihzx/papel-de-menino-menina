@@ -1,6 +1,5 @@
 import Line from "../../components/atomo/line/Line";
 import SectionName from "../../components/atomo/sectionName/SectionName";
-import Footer from "../../components/molecules/footer/Footer";
 import { NavBar } from "../../components/molecules/navBar/NavBar";
 import {
   OurMethodology,
@@ -16,7 +15,6 @@ function OurMethods() {
       <EmotionalSupport />
       <CourseAndWorkshop />
       <Line />
-      <Footer />
     </>
   );
 }

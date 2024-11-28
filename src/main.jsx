@@ -6,13 +6,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+import "./styles.css";
+
+import AppRoutes from "./Routes";
+
 register();
-import App from "./App.jsx";
-import { GlobalStyles } from "./GlobalStyles.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-    <GlobalStyles />
+    <AppRoutes />
   </StrictMode>
 );
