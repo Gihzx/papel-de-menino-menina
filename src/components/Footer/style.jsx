@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
+export const FooterSection = styled.footer`
   background-color: rgb(255, 144, 41);
 
   .input {
@@ -21,12 +21,11 @@ export const Section = styled.section`
     justify-content: space-around;
   }
 `;
-export const LestContainer = styled.div`
+export const Main = styled.main`
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-bottom: solid 1px #202020;
-  border-top: solid 1px #202020;
   @media (max-width: 375px) {
     display: flex;
     flex-direction: column;

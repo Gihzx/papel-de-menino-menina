@@ -13,7 +13,7 @@ import ProjectIPM from "./pages/projectIPM/ProjectIPM";
 import CommentsPre from "./pages/commentsPre/CommentsPre";
 import Condensed from "./pages/condensed/Condensed";
 // import NavBar from "./components/molecules/navBar/NavBar";
-import Footer from "./components/molecules/footer/Footer";
+import { Footer } from "./components/Footer";
 
 function AppRoutes() {
   return (
