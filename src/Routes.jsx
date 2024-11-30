@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
-import { AboutUs, OurProjects, Methodology } from "./pages/institucional";
+import { AboutUs, OurProjects, Methodology } from "./pages/Institucional";
 import TeamMembers from "./pages/TeamMembers/TeamMembers";
 import CommentsPre from "./pages/commentsPre/CommentsPre";
 import Condensed from "./pages/condensed/Condensed";
