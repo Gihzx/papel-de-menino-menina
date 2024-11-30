@@ -4,7 +4,6 @@ import { AboutUs, OurProjects, Methodology } from "./pages/Institucional";
 import TeamMembers from "./pages/TeamMembers/TeamMembers";
 import CommentsPre from "./pages/commentsPre/CommentsPre";
 import Condensed from "./pages/condensed/Condensed";
-// import NavBar from "./components/molecules/navBar/NavBar";
 import { Footer } from "./components/Footer";
 import { Female, Male } from "./pages/services";
 import { Courses, Media } from "./pages/supporters";

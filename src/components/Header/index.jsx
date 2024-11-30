@@ -34,7 +34,6 @@ export function Header() {
   };
 
   const mobileMenuItemStyles = {
-    // padding: "10px",
     borderBottom: "1px solid #ddd",
     textAlign: "center",
   };

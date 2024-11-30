@@ -1,4 +1,4 @@
-import SectionName from "../../components/atomo/sectionName/SectionName.jsx";
+import { SectionName } from "../../components/SectionName/index.jsx";
 import InforIPM from "../../components/molecules/InforIPM/InforIPM.jsx";
 import History from "../../components/atomo/history/History.jsx";
 import Line from "../../components/atomo/line/Line.jsx";
@@ -12,7 +12,7 @@ import {
 export function AboutUs() {
   return (
     <>
-      <SectionName>Quem somos</SectionName>
+      <SectionName title="Quem somos" />
       <InforIPM />
       <History />
       <Line />
@@ -23,7 +23,7 @@ export function AboutUs() {
 export function OurProjects() {
   return (
     <>
-      <SectionName>Nosso projetos</SectionName>
+      <SectionName title="Nosso projetos" />
     </>
   );
 }
@@ -31,7 +31,7 @@ export function OurProjects() {
 export function Methodology() {
   return (
     <>
-      <SectionName>Nossa metodologia</SectionName>
+      <SectionName title="Nossa metodologia" />
       <OurMethodology />
       <EmotionalSupport />
       <CourseAndWorkshop />

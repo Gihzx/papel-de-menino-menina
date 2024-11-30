@@ -1,4 +1,4 @@
-import SectionName from "../../components/atomo/sectionName/SectionName";
+import { SectionName } from "../../components/SectionName";
 import {
   CommunityBakery,
   TrainingClass,
@@ -12,7 +12,7 @@ import Press from "../../components/molecules/Press/Press";
 export function Courses() {
   return (
     <>
-      <SectionName>Cursos & oficinas</SectionName>
+      <SectionName title="Cursos & oficinas" />
       <CommunityBakery />
       <TrainingClass />
       <WorkshopActivity />
@@ -24,11 +24,11 @@ export function Courses() {
 }
 
 export function Media() {
-    return (
-      <>
-        <SectionName>Imprensa</SectionName>
-        <Press />
-        <Line />
-      </>
-    );
-  }
+  return (
+    <>
+      <SectionName title="Imprensa" />
+      <Press />
+      <Line />
+    </>
+  );
+}

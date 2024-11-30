@@ -1,4 +1,4 @@
-import SectionName from "../../components/atomo/sectionName/SectionName";
+import { SectionName } from "../../components/SectionName";
 import {
   FemiUnit,
   Pami,
@@ -10,15 +10,14 @@ import {
 import Line from "../../components/atomo/line/Line";
 
 import {
-    MaleUnit,
-    FormationClass,
-  } from "../../components/molecules/MaleUnit/MaleUnit";
-
+  MaleUnit,
+  FormationClass,
+} from "../../components/molecules/MaleUnit/MaleUnit";
 
 export function Female() {
   return (
     <>
-      <SectionName>Unidade Feminina</SectionName>
+      <SectionName title="Unidade Feminina" />
       <FemiUnit />
       <Pami />
       <BeautySalon />
@@ -31,12 +30,12 @@ export function Female() {
 }
 
 export function Male() {
-    return (
-      <>
-        <SectionName>Unidade Masculina</SectionName>
-        <MaleUnit />
-        <FormationClass />
-        <Line />
-      </>
-    );
-  }
+  return (
+    <>
+      <SectionName title="Unidade Masculina" />
+      <MaleUnit />
+      <FormationClass />
+      <Line />
+    </>
+  );
+}

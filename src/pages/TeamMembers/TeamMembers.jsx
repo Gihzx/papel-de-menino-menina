@@ -1,10 +1,10 @@
 import Line from "../../components/atomo/line/Line";
-import SectionName from "../../components/atomo/sectionName/SectionName";
+import { SectionName } from "../../components/SectionName";
 import TeamInfo from "../../components/molecules/TeamInfo/TeamInfo";
 function TeamMembers() {
   return (
     <>
-      <SectionName>Equipe</SectionName>
+      <SectionName title="Equipe"/>
       <TeamInfo />
       <Line />
     </>

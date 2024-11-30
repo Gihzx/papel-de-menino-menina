@@ -1,9 +1,9 @@
 import Comments from "../../components/molecules/comments/Comments";
-import SectionName from "../../components/atomo/sectionName/SectionName";
+import { SectionName } from "../../components/SectionName";
 function CommentsPre() {
   return (
     <>
-      <SectionName>Palavras da presidente</SectionName>
+      <SectionName title="Palavras da presidente" />
       <Comments />
     </>
   );
