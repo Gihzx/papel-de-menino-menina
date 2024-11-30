@@ -1,4 +1,3 @@
-import { NavBar } from "../../components/molecules/navBar/NavBar";
 import SectionName from "../../components/atomo/sectionName/SectionName";
 import {
   CommunityBakery,
@@ -8,10 +7,11 @@ import {
   BarbershopServices,
 } from "../../components/atomo/activities/CommunityBakery";
 import Line from "../../components/atomo/line/Line";
-function MissionNgo() {
+import Press from "../../components/molecules/Press/Press";
+
+export function Courses() {
   return (
     <>
-      <NavBar />
       <SectionName>Cursos & oficinas</SectionName>
       <CommunityBakery />
       <TrainingClass />
@@ -22,4 +22,13 @@ function MissionNgo() {
     </>
   );
 }
-export default MissionNgo;
+
+export function Media() {
+    return (
+      <>
+        <SectionName>Imprensa</SectionName>
+        <Press />
+        <Line />
+      </>
+    );
+  }

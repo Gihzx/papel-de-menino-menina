@@ -1,37 +1,40 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Contact from "./pages/admContact/AdmContact";
-import InforOng from "./pages/InforOng/InforOng";
-import InforDonate from "./pages/InforDonate/InforDonate";
-import MissionNgo from "./pages/missionNgo/MissionNgo";
-import MaleDivision from "./pages/MaleDivision/MaleDivision";
-import UnitFemi from "./pages/UnitFemi/UnitFemi";
-import OurMethods from "./pages/ourMethods/OurMethods";
+import { AboutUs, OurProjects, Methodology } from "./pages/Institucional";
 import TeamMembers from "./pages/TeamMembers/TeamMembers";
-import PressInfo from "./pages/PressInfo/PressInfo";
-import ProjectIPM from "./pages/projectIPM/ProjectIPM";
 import CommentsPre from "./pages/commentsPre/CommentsPre";
 import Condensed from "./pages/condensed/Condensed";
 // import NavBar from "./components/molecules/navBar/NavBar";
 import { Footer } from "./components/Footer";
+import { Female, Male } from "./pages/services";
+import { Courses, Media } from "./pages/supporters";
+import { Donation } from "./pages/donation";
+import { Contact } from "./pages/contact";
+import { Header } from "./components/Header"
 
-function AppRoutes() {
+export function AppRoutes() {
   return (
     <>
-      {/* <NavBar/> */}
+      <Header/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+
+          <Route path="/sobre" element={<AboutUs />} />
+          <Route path="/projetos" element={<OurProjects />} />
+          <Route path="/metodologia" element={<Methodology />} />
+
+          <Route path="/unidadeFeminina" element={<Female />} />
+          <Route path="/unidadeMascula" element={<Male />} />
+
+          <Route path="/cursos-oficina" element={<Courses />} />
+          <Route path="/imprensa" element={<Media />} />
+
+          <Route path="/voluntario" element={<Donation />} />
+
           <Route path="/contato" element={<Contact />} />
-          <Route path="/inforOng" element={<InforOng />} />
+
           <Route path="/equipe" element={<TeamMembers />} />
-          <Route path="/voluntario" element={<InforDonate />} />
-          <Route path="/cursoeoficina" element={<MissionNgo />} />
-          <Route path="/unidadeMascula" element={<MaleDivision />} />
-          <Route path="/unidadeFeminina" element={<UnitFemi />} />
-          <Route path="/metodologia" element={<OurMethods />} />
-          <Route path="/imprensa" element={<PressInfo />} />
-          <Route path="/projetoIPM" element={<ProjectIPM />} />
           <Route path="/comentario-presidente" element={<CommentsPre />} />
           <Route path="condeca" element={<Condensed />} />
         </Routes>
@@ -40,4 +43,3 @@ function AppRoutes() {
     </>
   );
 }
-export default AppRoutes;

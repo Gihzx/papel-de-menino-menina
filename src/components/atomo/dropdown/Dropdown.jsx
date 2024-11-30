@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import * as S from "./style.jsx";
 
 import { useState } from "react";
@@ -28,12 +27,12 @@ function Dropdown({ options, defaultValue }) {
           <ul>
             {options.map((option, index) => (
               <li key={index}>
-                <Link
-                  to={option.link}
+                <a
+                  href={option.link}
                   onClick={() => setSelectedValue(option.text)}
                 >
                   {option.text}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

@@ -1,4 +1,3 @@
-import { NavBar } from "../../components/molecules/navBar/NavBar";
 import HistoryOngHome from "../../components/molecules/historyOngHome/HistoryOngHome";
 import VolunteerCountComponent from "../../components/molecules/VolunteerCountComponent/VolunteerCountComponent";
 import VideoYoutube from "../../components/molecules/videoYoutube/VideoYoutube";
@@ -10,7 +9,6 @@ import CarrosselParceiros from "../../components/molecules/partner/Partner";
 function Home() {
   return (
     <>
-      <NavBar />
       <Carousel />
       <VolunteerCountComponent />
       <HistoryOngHome />

@@ -1,4 +1,3 @@
-import { NavBar } from "../../components/molecules/navBar/NavBar";
 import SectionName from "../../components/atomo/sectionName/SectionName";
 import {
   FemiUnit,
@@ -9,10 +8,16 @@ import {
   AllNew,
 } from "../../components/molecules/FemiUnit/FemiUnit";
 import Line from "../../components/atomo/line/Line";
-function UnitFemi() {
+
+import {
+    MaleUnit,
+    FormationClass,
+  } from "../../components/molecules/MaleUnit/MaleUnit";
+
+
+export function Female() {
   return (
     <>
-      <NavBar />
       <SectionName>Unidade Feminina</SectionName>
       <FemiUnit />
       <Pami />
@@ -24,4 +29,14 @@ function UnitFemi() {
     </>
   );
 }
-export default UnitFemi;
+
+export function Male() {
+    return (
+      <>
+        <SectionName>Unidade Masculina</SectionName>
+        <MaleUnit />
+        <FormationClass />
+        <Line />
+      </>
+    );
+  }

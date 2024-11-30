@@ -10,7 +10,8 @@ import patner6 from "../../../assets/Screenshot_2024-11-23_175121-removebg-previ
 import patner7 from "../../../assets/Screenshot_2024-11-23_175126-removebg-preview.png";
 import patner8 from "../../../assets/Screenshot_2024-11-23_175130-removebg-preview.png";
 import patner9 from "../../../assets/Screenshot_2024-11-23_175135-removebg-preview.png";
-import patner10 from "../../../assets/Screenshot_2024-11-23_175140-removebg-preview.png";
+import patner10 from "../../../assets/images/logos/cruzVermelhaBrasileira.png";
+import patner11 from "../../../assets/Screenshot_2024-11-23_175140-removebg-preview.png";
 
 const CarrosselParceiros = () => {
   const settings = {
@@ -63,6 +64,7 @@ const CarrosselParceiros = () => {
             patner8,
             patner9,
             patner10,
+            patner11,
           ].map((imgSrc, index) => (
             <div key={index} style={{ padding: "10px" }}>
               <img

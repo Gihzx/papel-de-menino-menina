@@ -9,7 +9,7 @@ import "swiper/css/scrollbar";
 import "./styles.css";
 
 
-import AppRoutes from "./Routes";
+import { AppRoutes } from "./Routes";
 
 register();
 
