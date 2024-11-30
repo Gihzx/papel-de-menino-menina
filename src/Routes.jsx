@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
-import { AboutUs, OurProjects, Methodology } from "./pages/Institucional";
+import { AboutUs, OurProjects, Methodology } from "./pages/institucional";
 import TeamMembers from "./pages/TeamMembers/TeamMembers";
 import CommentsPre from "./pages/commentsPre/CommentsPre";
 import Condensed from "./pages/condensed/Condensed";
@@ -9,12 +9,12 @@ import { Female, Male } from "./pages/services";
 import { Courses, Media } from "./pages/supporters";
 import { Donation } from "./pages/donation";
 import { Contact } from "./pages/contact";
-import { Header } from "./components/Header"
+import { Header } from "./components/Header";
 
 export function AppRoutes() {
   return (
     <>
-      <Header/>
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
