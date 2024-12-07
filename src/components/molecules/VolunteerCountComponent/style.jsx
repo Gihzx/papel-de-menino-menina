@@ -5,6 +5,7 @@ export const Conatiner = styled.section`
   justify-content: space-around;
   display: flex;
   align-items: center;
+
   border-radius: 0 0 10px 10px;
   padding: 20px;
   .item {
@@ -32,6 +33,7 @@ export const Conatiner = styled.section`
     position: relative;
     display: flex;
     align-items: center;
+
     .item {
       width: 100%;
     }

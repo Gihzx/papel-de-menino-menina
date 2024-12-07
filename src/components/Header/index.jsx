@@ -156,6 +156,13 @@ export function Header() {
                   <IoIosArrowDown color={theme.colors.primary} size={20} />
                 </li>
                 <li>
+                  <Dropdown
+                    options={[{ text: "Condeca", link: "/condeca" }]}
+                    defaultValue="Lei de Incetivo"
+                  />
+                  <IoIosArrowDown color={theme.colors.primary} size={20} />
+                </li>
+                <li>
                   <Links
                     title="Contatos"
                     type="primary"

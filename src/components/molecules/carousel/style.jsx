@@ -100,14 +100,14 @@ export const P = styled.p`
 
   @media (max-width: 768px) {
     margin-left: 2rem;
-    margin-top: 25%;
+    margin-top: 45%;
     width: 85%; /* Ajuste de largura em telas médias */
     font-size: 0.9rem;
   }
 
   @media (max-width: 480px) {
     margin-left: 1rem;
-    margin-top: 40%;
+    margin-top: 50%;
     width: 90%;
     font-size: 0.8rem;
   }
