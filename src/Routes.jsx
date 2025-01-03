@@ -10,7 +10,7 @@ import { Courses, Media } from "./pages/supporters";
 import { Donation } from "./pages/donation";
 import { Contact } from "./pages/contact";
 import { Header } from "./components/Header";
-
+import Fumcad from "./pages/fumcad/Fumcad";
 export function AppRoutes() {
   return (
     <>
@@ -35,7 +35,9 @@ export function AppRoutes() {
 
           <Route path="/equipe" element={<TeamMembers />} />
           <Route path="/comentario-presidente" element={<CommentsPre />} />
-          <Route path="condeca" element={<Condensed />} />
+          <Route path="/condeca" element={<Condensed />} />
+          <Route path="/fumcad" element={<Fumcad />} />
+
         </Routes>
       </BrowserRouter>
       <Footer />

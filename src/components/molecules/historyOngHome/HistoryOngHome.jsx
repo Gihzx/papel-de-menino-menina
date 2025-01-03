@@ -26,10 +26,10 @@ function HistoryOngHome() {
           socioeducativas de São Paulo.
         </p>
         <span>
-          <p>Acompanhamento Psicossocial e Mentoria</p>
-          <p>Acompanhamento Psicossocial e Mentoria</p>
-          <p>Acompanhamento Psicossocial e Mentoria</p>
-          <p>Acompanhamento Psicossocial e Mentoria</p>
+          <p>Rodas de Conversas</p>
+          <p>Cursos Profissionalizantes</p>
+          <p>Apoio Médico e Psicológico</p>
+          <p>Oficinas</p>
         </span>
 
         <PrimaryButton

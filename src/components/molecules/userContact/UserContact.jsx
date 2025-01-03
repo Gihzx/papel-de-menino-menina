@@ -63,7 +63,6 @@ function UserContact() {
             </p>
           </div>
           <div>
-            <p>gestao@papeldemenino.org.br</p>
             <p>instagram.com/ipapeldemenino</p>
           </div>
         </div>

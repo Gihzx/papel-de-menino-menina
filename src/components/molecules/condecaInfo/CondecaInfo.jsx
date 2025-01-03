@@ -10,9 +10,11 @@ function CondecaInfo() {
         <div>
           <p>
             É um órgão paritário permanente, constituído de representações da
-            sociedade civil e de secretarias governamentais. Sua incumbência é
-            dormular, controlar, supervisionar e avaliar as políticas públicas
-            voltadas ás crinças e adolescentes nas esfera estadual.
+            sociedade civil e de secretarias governamentais. Sua incumbência <span></span>
+            <span>
+              formular, controlar, supervisionar e avaliar as políticas públicas
+              voltadas ás crinças e adolescentes nas esfera estadual.{" "}
+            </span>
           </p>
           <p>
             Também é de sua responsabilidade a gerencia do Fundo Estadual dos

@@ -2,16 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   padding: 3% 7%;
-
-  h1 {
-    font-size: 30px;
-    color: #ba6414;
-    margin-top: 0;
-  }
-  .textTitle {
-    font-size: 19px;
-    color: #7d00a2;
-    font-weight: 600;
+  div {
     margin-top: 2rem;
   }
   span {

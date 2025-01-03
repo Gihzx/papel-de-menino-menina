@@ -9,7 +9,12 @@ export function Donation() {
     <>
       <SectionName title="Voluntário" />
       <SectionDoe />
-      <DateDonate />
+      <DateDonate
+        bankName="Banco do Brasil"
+        accountNumber="12345-6"
+        pix="exemplo@pix.com"
+        paypalLink="https://www.paypal.com/donate/?hosted_button_id=XWYF36FTCENY2"
+      />
       <TextDoe />
       <Line />
     </>
