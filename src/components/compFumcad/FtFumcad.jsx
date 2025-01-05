@@ -3,7 +3,7 @@ import cmdca from "../../assets/Screenshot_2025-01-03_205325-removebg-preview.pn
 import Sp from "../../assets/Screenshot_2025-01-05_170014-removebg-preview.png"
 import { Container, Foto } from "./StyledComponents";
 
-function FotoFumcad() {
+function FtFumcad() {
   return (
     <Container>
       <Foto src={fumdac} alt="Imagem 1" />
@@ -13,4 +13,4 @@ function FotoFumcad() {
   );
 }
 
-export default FotoFumcad;
+export default FtFumcad;

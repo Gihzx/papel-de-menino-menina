@@ -1,10 +1,10 @@
 import * as S from "./style.jsx";
-import FotoFumcad from "./fotoFumcad.jsx";
+import FtFumcad from "./FtFumcad.jsx";
 function CompFuncad() {
   return (
     <>
-      <FotoFumcad />
       <S.Section>
+        <FtFumcad />
         <div>
           Fundo Municipal dos Direitos da Criança e do Adolescente “FUMCAD” foi
           criado pela Lei Municipal nº 11.247, de 01 de outubro de 1992, com a
@@ -95,7 +95,7 @@ function CompFuncad() {
           <div>
             01 Supervisor Pedagógico
             .........................................................................................................................
-             R$93.600
+            R$93.600
           </div>
           <div>
             01 Assistente Psicossocial
@@ -110,7 +110,7 @@ function CompFuncad() {
           <div>
             01 Instrutor(a) de Estética e Belza
             ........................................................................................................
-             R$19.200
+            R$19.200
           </div>
           <div>
             01 Instrutor(a) de Serviços de Tecnologia da Informção
@@ -122,7 +122,8 @@ function CompFuncad() {
           </div>
           <div>
             <span>Valor Total</span>{" "}
-            .......................................................................................................................................................... R$314.400 
+            ..........................................................................................................................................................
+            R$314.400
           </div>
         </div>
       </S.Section>
