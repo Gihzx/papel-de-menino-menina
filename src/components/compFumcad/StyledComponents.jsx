@@ -9,6 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Foto = styled.img`
-  height: auto;
+  width: 100px;
   border-radius: 8px;
+  padding-left: 2rem;
 `;

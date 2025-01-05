@@ -18,26 +18,19 @@ export function AppRoutes() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/sobre" element={<AboutUs />} />
           <Route path="/projetos" element={<OurProjects />} />
           <Route path="/metodologia" element={<Methodology />} />
-
           <Route path="/unidadeFeminina" element={<Female />} />
           <Route path="/unidadeMascula" element={<Male />} />
-
           <Route path="/cursos-oficina" element={<Courses />} />
           <Route path="/imprensa" element={<Media />} />
-
           <Route path="/voluntario" element={<Donation />} />
-
           <Route path="/contato" element={<Contact />} />
-
           <Route path="/equipe" element={<TeamMembers />} />
           <Route path="/comentario-presidente" element={<CommentsPre />} />
           <Route path="/condeca" element={<Condensed />} />
           <Route path="/fumcad" element={<Fumcad />} />
-
         </Routes>
       </BrowserRouter>
       <Footer />

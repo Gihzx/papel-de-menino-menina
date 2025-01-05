@@ -29,7 +29,7 @@ function CompFuncad() {
           direitos, e visando a redução do risco de reincidência infracional.
         </div>
         <div>
-          <span>Decreto Municipal nº 57.575/2016 Artigo 6º</span>
+          <span>Decreto Municipal nº 57.575/2016 Artigo 6º </span>
           Enquanto o sistema de cadastramento eletrônico das Organizações da
           Sociedade Civil não contemplar a publicação das informações exigidas
           pela Lei Federal nº 13.019, de 31 de julho de 2014, cada Secretaria,
@@ -40,6 +40,7 @@ function CompFuncad() {
         <div>
           I – objeto da parceria
           <span>
+            {" "}
             FUMCAD 2021 – Processo SEI no 6074.2023/0002282-3 Oferecer apoio e
             orientação as adolescentes gestantes e/ou mães em privação de
             liberdade, cumprindo medida socioeducativa na Unidade Socioeducativa
@@ -51,6 +52,7 @@ function CompFuncad() {
             II – Valor total previsto na parceria e valores efetivamente
             liberados;
             <span>
+              {" "}
               Valor Previsto: R$ 314.400,00 Valor Liberado: R$ 157.200,00
             </span>
           </div>
@@ -61,13 +63,14 @@ function CompFuncad() {
           <div>
             IV – data de início e término da parceria, incluindo eventuais
             prorrogações
-            <span>Início: 01/10/2024 Término: 30/09/2025</span>
+            <span> Início: 01/10/2024 Término: 30/09/2025</span>
           </div>
           <div>
             V – situação da prestação de contas final da parceria, informando a
             data limite para sua apresentação, a data em que foi apresentada, o
             prazo para sua análise e o resultado conclusivo;
             <span>
+              {" "}
               Prazo final para apresentação da Prestação de Contas Final:
               30/09/2025 Status: Não apresentada
             </span>
@@ -82,6 +85,44 @@ function CompFuncad() {
             parceria, o valor total da remuneração da equipe de trabalho, as
             funções que seus integrantes desempenham e a remuneração prevista
             para o respectivo exercício;
+          </div>
+          <div>
+            <span>
+              Função dos integrantes e Valores da Remuneração Annual da equipe
+              de Trabalho
+            </span>
+          </div>
+          <div>
+            01 Supervisor Pedagógico
+            .........................................................................................................................
+            R$93.600
+          </div>
+          <div>
+            01 Assistente Psicossocial
+            ..........................................................................................................................
+            R$57.600
+          </div>{" "}
+          <div>
+            02 Assitente Sociopedagógicas
+            ...........................................................................................................
+            R$48.600
+          </div>{" "}
+          <div>
+            01 Instrutor(a) de Estética e Belza
+            ........................................................................................................
+            R$19.200
+          </div>
+          <div>
+            01 Instrutor(a) de Serviços de Tecnologia da Informção
+            .................................................... R$28.800
+          </div>
+          <div>
+            01 Instrutor(a) de Serviços de Iluminação e Fotografia
+            ....................................................... R$19.200
+          </div>
+          <div>
+            <span>Valor Total</span>{" "}
+            ..........................................................................................................................................................R$314.400
           </div>
         </div>
       </S.Section>

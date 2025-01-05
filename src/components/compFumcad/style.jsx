@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  padding: 0% 7%;
+  padding: 0% 7% 3%;
   div {
     margin-top: 2rem;
   }

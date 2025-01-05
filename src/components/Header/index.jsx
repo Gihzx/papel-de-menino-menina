@@ -88,7 +88,10 @@ export function Header() {
                     />
                     <DropdownMenu
                       title="Lei de Incetivo"
-                      options={[{ text: "Condeca", link: "/condeca" }]}
+                      options={[
+                        { text: "Condeca", link: "/condeca" },
+                        { text: "Fumcad", link: "/fumcad" },
+                      ]}
                     />
                     <li style={mobileMenuItemStyles}>
                       <Links

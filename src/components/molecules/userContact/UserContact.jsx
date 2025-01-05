@@ -49,8 +49,7 @@ function UserContact() {
           <div>
             <p className="colorText">E-mail:</p>
             <p>email@gmail.com</p>
-            <p className="colorText">Telefone</p>
-            <p>(00) 0000-0000</p>
+        
           </div>
           <div>
             <p className="colorText">Horario de funcionamento:</p>
