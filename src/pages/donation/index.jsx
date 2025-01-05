@@ -7,7 +7,7 @@ import Line from "../../components/atomo/line/Line";
 export function Donation() {
   return (
     <>
-      <SectionName title="Voluntário" />
+      <SectionName title="Como doar" />
       <SectionDoe />
       <DateDonate
         bankName="Banco do Brasil"

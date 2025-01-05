@@ -41,15 +41,15 @@ const CarrosselParceiros = () => {
 
   return (
     <>
-      <h1 style={{ textAlign: "center", color: "#ba6414", margin: "20px 0" }}>
+      <h1 style={{ textAlign: "center", color: "#ba6414", margin: "3rem 0" }}>
         Parceiros
       </h1>
       <div
         style={{
           padding: "20px",
           background: "#7D00A2",
-          overflow: "hidden", // Impede elementos de transbordarem
-          borderRadius: "3px", // Estilo mais moderno
+          overflow: "hidden", 
+          borderRadius: "3px",
         }}
       >
         <Slider {...settings}>

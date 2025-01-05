@@ -5,6 +5,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top:3rem;
   h2 {
     color: #ba6414;
   }
@@ -24,6 +25,10 @@ export const Section = styled.section`
     padding: 1rem;
     p {
       width: 40%;
+    }
+    span{
+      color: #7D00A2 ;
+      font-weight: 600;
     }
 
     @media (max-width: 1025px) and (min-width: 900px) {

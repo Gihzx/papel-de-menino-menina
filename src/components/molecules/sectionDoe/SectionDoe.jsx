@@ -1,5 +1,4 @@
 import * as S from "./style.jsx";
-import { PrimaryButton } from "../../atomo/button/Primary-button";
 import { FaRegHeart } from "react-icons/fa6";
 function SectionDoe() {
   return (
@@ -9,7 +8,7 @@ function SectionDoe() {
           <div>
             <p className="paragrafro">Como posso ajudar?</p>
             <h1>
-              SEJA UM VOLUNTÁRIO <FaRegHeart />
+            Faça sua Doação<FaRegHeart />
             </h1>
           </div>
         </header>
@@ -26,11 +25,7 @@ function SectionDoe() {
             <div>
               <p>VOLUNTARIADO Quer ser voluntárix no IPM?!</p>
             </div>
-            <div>
-              <PrimaryButton style={{ backgroundColor: "#7D00A2" }}>
-                Quero ser um voluntário
-              </PrimaryButton>
-            </div>
+      
           </div>
           <div className="boxTxt">
             <p className="paragrafro">Doação IRPF:</p>

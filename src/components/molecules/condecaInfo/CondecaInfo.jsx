@@ -5,7 +5,7 @@ function CondecaInfo() {
       <S.Section>
         <div>
           <p className="textTitle">O que é a condeca?</p>
-          <h1>CONSELHO ESTADUAL DOS DIREITOS DA CRINÇA E DO ADOLESCENTE</h1>
+          <h1>CONSELHO ESTADUAL DOS DIREITOS DA CRIANÇA E DO ADOLESCENTE</h1>
         </div>
         <div>
           <p>
@@ -26,7 +26,7 @@ function CondecaInfo() {
         <div>
           <p>
             O Insttituto Papel de Menino executará em 2022 o projeto "Padaria
-            Escola" por meio co Conselho Estadual dos Direitos dda Crinaça e do
+              Escola" por meio co Conselho Estadual dos Direitos dda Crinaça e do
             Adolescente (condeca).
           </p>
           <p>

@@ -6,6 +6,7 @@ import { Navlist } from "./style.jsx";
 import { isMobile } from "react-device-detect";
 import { theme } from "../../theme.jsx";
 import { Links } from "../Links";
+
 import { DropdownMenu } from "./components/dropdown.jsx";
 
 export function Header() {
@@ -155,22 +156,24 @@ export function Header() {
                   />
                   <IoIosArrowDown color={theme.colors.primary} size={20} />
                 </li>
-                <li>
-                  <Dropdown
-                    options={[{ text: "Volutário", link: "/voluntario" }]}
-                    defaultValue="Doação"
-                  />
-                  <IoIosArrowDown color={theme.colors.primary} size={20} />
-                </li>
+
                 <li>
                   <Dropdown
                     options={[
                       { text: "Condeca", link: "/condeca" },
                       { text: "Fumcad", link: "/fumcad" },
                     ]}
-                    defaultValue="Lei de Incetivo"
+                    defaultValue="Lei de incentivo"
                   />
                   <IoIosArrowDown color={theme.colors.primary} size={20} />
+                </li>
+                <li>
+                <Links
+                    title="Como doar"
+                    type="primary"
+                    links={[{ text: "Volutário", link: "/voluntario"  }]}
+                  />
+        
                 </li>
                 <li>
                   <Links

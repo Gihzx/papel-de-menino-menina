@@ -6,6 +6,9 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   padding: 3rem;
+  h1{
+    margin-bottom: 3rem;
+  }
   .VideoYoutube {
     width: 900px;
     height: 500px;

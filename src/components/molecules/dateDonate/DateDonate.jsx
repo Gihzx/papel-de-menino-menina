@@ -36,11 +36,6 @@ function DateDonate({
           </div>
           <div>
             <p>
-              Pix: <span>{pix}</span>
-            </p>
-          </div>
-          <div>
-            <p>
               {infComprovante} <span>{emailName}</span>
             </p>
           </div>
