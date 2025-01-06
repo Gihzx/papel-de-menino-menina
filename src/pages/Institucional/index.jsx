@@ -24,6 +24,7 @@ export function OurProjects() {
   return (
     <>
       <SectionName title="Nosso projetos" />
+
     </>
   );
 }

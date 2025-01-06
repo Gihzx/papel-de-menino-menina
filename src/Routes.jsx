@@ -11,6 +11,7 @@ import { Donation } from "./pages/donation";
 import { Contact } from "./pages/contact";
 import { Header } from "./components/Header";
 import Fumcad from "./pages/fumcad/Fumcad";
+import { LeiIncentivo } from "./pages/leiIncetivo";
 export function AppRoutes() {
   return (
     <>
@@ -31,6 +32,8 @@ export function AppRoutes() {
           <Route path="/comentario-presidente" element={<CommentsPre />} />
           <Route path="/condeca" element={<Condensed />} />
           <Route path="/fumcad" element={<Fumcad />} />
+          <Route path="/lei-incentivo" element={<LeiIncentivo />} />
+
         </Routes>
       </BrowserRouter>
       <Footer />

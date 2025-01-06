@@ -78,14 +78,12 @@ export function Header() {
                       options={[
                         { text: "Unidade Feminina", link: "/unidadeFeminina" },
                         { text: "Unidade Masculina", link: "/unidadeMascula" },
+                        { text: "Cursos & Oficinas", link: "/cursos-oficina" },
                       ]}
                     />
                     <DropdownMenu
                       title="Apoiadores"
-                      options={[
-                        { text: "Cursos & Oficinas", link: "/cursos-oficina" },
-                        { text: "Imprensa", link: "/imprensa" },
-                      ]}
+                      options={[{ text: "Imprensa", link: "/imprensa" }]}
                     />
                     <DropdownMenu
                       title="Doação"
@@ -94,6 +92,7 @@ export function Header() {
                     <DropdownMenu
                       title="Lei de Incetivo"
                       options={[
+                        { text: "Lei de incentivo", link: "/lei-incentivo" },
                         { text: "Condeca", link: "/condeca" },
                         { text: "Fumcad", link: "/fumcad" },
                       ]}
@@ -141,6 +140,7 @@ export function Header() {
                     options={[
                       { text: "Unidade Feminina", link: "/unidadeFeminina" },
                       { text: "Unidade Masculina", link: "/unidadeMascula" },
+                      { text: "Cursos & Oficinas", link: "/cursos-oficina" },
                     ]}
                     defaultValue="Serviços"
                   />
@@ -148,10 +148,7 @@ export function Header() {
                 </li>
                 <li>
                   <Dropdown
-                    options={[
-                      { text: "Cursos & Oficinas", link: "/cursos-oficina" },
-                      { text: "Imprensa", link: "/imprensa" },
-                    ]}
+                    options={[{ text: "Imprensa", link: "/imprensa" }]}
                     defaultValue="Apoiadores"
                   />
                   <IoIosArrowDown color={theme.colors.primary} size={20} />
@@ -160,21 +157,16 @@ export function Header() {
                 <li>
                   <Dropdown
                     options={[
+                      { text: "Lei de incentivo", link: "/lei-incentivo" },
                       { text: "Condeca", link: "/condeca" },
                       { text: "Fumcad", link: "/fumcad" },
+                      { text: "Como doar", link: "/voluntario" },
                     ]}
                     defaultValue="Lei de incentivo"
                   />
                   <IoIosArrowDown color={theme.colors.primary} size={20} />
                 </li>
-                <li>
-                <Links
-                    title="Como doar"
-                    type="primary"
-                    links={[{ text: "Volutário", link: "/voluntario"  }]}
-                  />
-        
-                </li>
+
                 <li>
                   <Links
                     title="Contatos"
