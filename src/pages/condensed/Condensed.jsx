@@ -1,6 +1,8 @@
 import { SectionName } from "../../components/SectionName";
 import CondecaInfo from "../../components/molecules/condecaInfo/CondecaInfo";
 import DateDonate from "../../components/molecules/dateDonate/DateDonate";
+import Line from "../../components/atomo/line/Line";
+import Text from "./Text";
 function Condensed() {
   return (
     <>
@@ -20,6 +22,8 @@ function Condensed() {
         }
         paypalLink="https://www.paypal.com/donate/?hosted_button_id=XWYF36FTCENY2"
       />
+      <Text />
+      <Line />
     </>
   );
 }

@@ -10,10 +10,10 @@ export const Div = styled.div`
   z-index: 1;
   top: 0;
   border-bottom: solid 3px #7d00a2;
-  /* padding: 10px 24px; */
+
 
   .hamburger-menu {
-    display: none; /* Esconde o botão no desktop */
+    display: none;
     cursor: pointer;
     z-index: 2;
   }

@@ -5,7 +5,7 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
 
-  padding: 7%;
+  padding: 3%;
   p {
     text-align: center;
     color: #ba6414;

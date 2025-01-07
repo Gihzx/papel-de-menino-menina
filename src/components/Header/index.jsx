@@ -40,7 +40,7 @@ export function Header() {
   };
 
   return (
-    <header style={{ padding: "20px" }}>
+    <header style={{ padding: "15px" }}>
       <nav>
         <div style={menuStyles}>
           <a href="/">
@@ -69,7 +69,6 @@ export function Header() {
                       title="Institucional"
                       options={[
                         { text: "Quem Somos", link: "/sobre" },
-                        { text: "Nossos projetos", link: "/projetos" },
                         { text: "Nossa Metodologia", link: "/metodologia" },
                       ]}
                     />
@@ -128,7 +127,6 @@ export function Header() {
                   <Dropdown
                     options={[
                       { text: "Quem Somos", link: "/sobre" },
-                      { text: "Nossos projetos", link: "/projetos" },
                       { text: "Metodologia", link: "/metodologia" },
                     ]}
                     defaultValue="Institucional"
@@ -142,7 +140,7 @@ export function Header() {
                       { text: "Unidade Masculina", link: "/unidadeMascula" },
                       { text: "Cursos & Oficinas", link: "/cursos-oficina" },
                     ]}
-                    defaultValue="Serviços"
+                    defaultValue="Projetos"
                   />
                   <IoIosArrowDown color={theme.colors.primary} size={20} />
                 </li>
